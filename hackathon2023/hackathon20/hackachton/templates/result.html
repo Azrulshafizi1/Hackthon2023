@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - result{% endblock %}
+{% block content %}
+
+<style>
+    * {font-family: 'Montserrat', sans-serif;}
+</style>
+
+<div class="container1">
+    <h1>{{ item }}</h1>
+
+
+    <h1>Nutrition Information</h1>
+    <p>Calories: {{ calories }} kcal</p>
+    <p>Protein: {{ nutrition_data.protein }} grams</p>
+    <p>Fat: {{ nutrition_data.fat }} grams</p>
+
+
+
+
+
+    <script type="text/javascript">
+        var spoonacularServings = 1;
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://spoonacular.com/cdn/spoonacular-1.6.min.js"></script>
+</div>
+
+{% endblock %}
+
+
+
+
